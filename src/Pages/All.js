@@ -73,6 +73,9 @@ const All = () => {
   };
   return (
     <div className="container">
+      <div className="add-todo-button" onClick={onInsertToggle}>
+        <MdAddCircle />
+      </div>
       <Template todoLength={todos.length}>
         <Lists
           todos={todos}
@@ -80,9 +83,6 @@ const All = () => {
           onInsertToggle={onInsertToggle}
           onChangeSelectedTodo={onChangeSelectedTodo}
         />
-        <div className="add-todo-button" onClick={onInsertToggle}>
-          <MdAddCircle />
-        </div>
         {insertToggle && (
           <AddList
             selectedTodo={selectedTodo}

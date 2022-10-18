@@ -17,6 +17,7 @@ function App() {
           <section className="features">
             <Title />
             <Routes>
+              <Route path="/" element={<All />}></Route>
               <Route path="/All" element={<All />}></Route>
               <Route path="/Completed" element={<Completed />}></Route>
               <Route path="/Important" element={<Important />}></Route>

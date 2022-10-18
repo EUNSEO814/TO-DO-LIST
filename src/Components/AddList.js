@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 // import { TiTrash, TiPencil } from "react-icons/ti";
 import { MdAddCircle } from "react-icons/md";
 import { TiTrash, TiPencil } from "react-icons/ti";
+import "./AddList.css";
 
 const AddList = ({
   onInsertToggle,
@@ -33,6 +34,7 @@ const AddList = ({
     <div>
       <div className="background" onClick={onInsertToggle}></div>
       <form
+        className="inputForm"
         onSubmit={
           selectedTodo
             ? () => {
@@ -45,6 +47,7 @@ const AddList = ({
           placeholder="please type"
           value={value}
           onChange={onChange}
+          className="inputArea"
         ></input>
         {selectedTodo ? (
           <div className="rewrite">
@@ -60,7 +63,7 @@ const AddList = ({
             />
           </div>
         ) : (
-          <button type="submit">
+          <button type="submit" className="submitBtn">
             <MdAddCircle />
           </button>
         )}
