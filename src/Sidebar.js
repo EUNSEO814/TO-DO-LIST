@@ -20,15 +20,15 @@ const Sidebar = () => {
           </Link>
         </div>
         <div className="iconAndName">
-          <Link to="/Completed" className="a">
-            <MdCircle />
-            <span className="pageName">Completed</span>
-          </Link>
-        </div>
-        <div className="iconAndName">
           <Link to="/Important" className="a">
             <MdCircle />
             <span className="pageName">Important</span>
+          </Link>
+        </div>
+        <div className="iconAndName">
+          <Link to="/Completed" className="a">
+            <MdCircle />
+            <span className="pageName">Completed</span>
           </Link>
         </div>
         <div className="iconAndName">

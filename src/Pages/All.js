@@ -5,27 +5,14 @@ import Template from "../Components/Template";
 import { useState } from "react";
 import { MdAddCircle } from "react-icons/md";
 import "./All.css";
+import dummyData from "../static/dummyData";
+import { v4 as uuidv4 } from "uuid";
+
 let nextId = 4;
 const All = () => {
   const [selectedTodo, setSelectedTodo] = useState(null);
   const [insertToggle, setInsertToggle] = useState(false);
-  const [todos, setTodos] = useState([
-    {
-      id: 1,
-      text: "할일 1",
-      checked: true,
-    },
-    {
-      id: 2,
-      text: "할일 2",
-      checked: false,
-    },
-    {
-      id: 3,
-      text: "할일 3",
-      checked: true,
-    },
-  ]);
+  const [todos, setTodos] = useState(dummyData);
 
   const onInsertToggle = () => {
     if (selectedTodo) {
@@ -39,12 +26,12 @@ const All = () => {
       return alert("할 일을 입력해주세요.");
     } else {
       const todo = {
-        id: nextId,
+        id: uuidv4(),
         text,
         checked: false,
       };
       setTodos((todos) => todos.concat(todo));
-      nextId++;
+      console.log(todos);
     }
   };
 

@@ -19,8 +19,8 @@ function App() {
             <Routes>
               <Route path="/" element={<All />}></Route>
               <Route path="/All" element={<All />}></Route>
-              <Route path="/Completed" element={<Completed />}></Route>
               <Route path="/Important" element={<Important />}></Route>
+              <Route path="/Completed" element={<Completed />}></Route>
               <Route path="/Trash" element={<Trash />}></Route>
             </Routes>
           </section>
