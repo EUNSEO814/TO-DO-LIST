@@ -10,19 +10,20 @@
   width: 760px;
   height: 200px;
   border-radius: 5px;
-  box-shadow: 1px 2px 5px 1px #000000;
-  background: white;
+  box-shadow: 1px 2px 5px 1px #395b64;
+  background: #e7f6f2;
 }
 
 .inputArea {
   background: none;
   outline: none;
   border: none;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #395b64;
   padding: 0.5rem;
   font-size: 1.5rem;
   line-height: 1.5;
   width: 440px;
+  color: #2c3333;
 }
 
 .submitBtn {
@@ -30,7 +31,7 @@
   background: none;
   outline: none;
   border: none;
-  color: #000000;
+  color: #2c3333;
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 2rem;
@@ -42,7 +43,7 @@
 
 .rewrite > svg {
   padding-top: 20px;
-  color: #000000;
+  color: #2c3333;
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 2rem;

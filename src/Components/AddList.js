@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import { MdAddCircle } from "react-icons/md";
-// import { TiTrash, TiPencil } from "react-icons/ti";
+
 import { MdAddCircle } from "react-icons/md";
 import { TiTrash, TiPencil } from "react-icons/ti";
 import "./AddList.css";
@@ -52,11 +51,13 @@ const AddList = ({
         {selectedTodo ? (
           <div className="rewrite">
             <TiPencil
+              color="#395B64"
               onClick={() => {
                 onUpdate(selectedTodo.id, value);
               }}
             />
             <TiTrash
+              color="#CD3861"
               onClick={() => {
                 onRemove(selectedTodo.id);
               }}

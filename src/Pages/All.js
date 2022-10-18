@@ -8,7 +8,6 @@ import "./All.css";
 import dummyData from "../static/dummyData";
 import { v4 as uuidv4 } from "uuid";
 
-let nextId = 4;
 const All = () => {
   const [selectedTodo, setSelectedTodo] = useState(null);
   const [insertToggle, setInsertToggle] = useState(false);
